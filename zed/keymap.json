@@ -1,0 +1,36 @@
+[
+    {
+        "bindings": {
+            "ctrl-z": "workspace::ToggleZoom"
+        }
+    },
+
+    {
+        "context": "Editor",
+        "bindings": {
+            "ctrl-shift-up": "editor::AddSelectionAbove",
+            "ctrl-shift-down": "editor::AddSelectionBelow",
+            "ctrl-t": "terminal_panel::ToggleFocus",
+            "ctrl-f": "project_panel::ToggleFocus"
+        }
+    },
+
+    {
+        "context": "Terminal",
+        "bindings": {
+            "ctrl-t": null,
+            "cmd-t": "workspace::NewTerminal",
+            "ctrl-e": "terminal_panel::ToggleFocus",
+            "ctrl-f": "project_panel::ToggleFocus"
+        }
+    },
+
+    {
+        "context": "Workspace",
+        "bindings": {
+            "ctrl-e": "project_panel::ToggleFocus",
+            "ctrl-t": "terminal_panel::ToggleFocus",
+            "cmd-w": "workspace::CloseWindow"
+        }
+    }
+]
